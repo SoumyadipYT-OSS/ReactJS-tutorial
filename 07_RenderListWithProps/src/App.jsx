@@ -17,8 +17,8 @@ function App() {
 
   return (
     <>
-      {fruits.length > 0 ? <ListWithProps items={fruits} category="Fruits" /> : null }
-      {vegetables.length > 0 ? <ListWithProps items={vegetables} category="Vegetables" /> : null }
+      {fruits.length > 0 && <ListWithProps items={fruits} category="Fruits" /> }
+      {vegetables.length > 0 && <ListWithProps items={vegetables} category="Vegetables" /> }
     </>
   );
 }
